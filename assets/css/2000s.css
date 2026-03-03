@@ -6,7 +6,222 @@
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
-body {
-	font-family: monospace;
-	background-color: rgb(147, 246, 140);
+
+/* 
+✅ must use absolute positioning at least once
+✅ must use :hover and :active states at least once
+✅ must use @keyframes at least once */
+@font-face {
+		font-family: 'DreamerTM'; 
+		src: url('../fonts/DreamerTM-Regular.woff') format('woff');
 }
+
+body {
+	font-family: serif;
+	background-image: linear-gradient(to top,rgb(250, 186, 196),rgb(240, 231, 101), rgb(251, 251, 221),rgb(240, 231, 101),rgb(250, 186, 196), rgb(251, 251, 221));
+	background-color: rgb(251, 251, 221);
+	cursor: url('../cursor.png'), auto;
+}
+/* AAAA background animation */
+body {
+    margin: 0;
+    padding: 0;
+    /* Ensure the body and html cover the full screen height */
+    height: 100vh; 
+}
+
+.animated-gradient-background {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgb(20, 10, 112), rgb(255, 154, 169),rgb(255, 238, 0),white,white);
+    background-size: 300% 300%;
+    animation: gradientbg 8s ease infinite; 
+}
+
+@keyframes gradientbg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* animation */
+@keyframes borderanimation {
+	0%{
+		border-width: 3px;
+	}
+	50%{
+		border-width: 6px;
+	}
+	100%{
+		border-width: 3px;
+	}
+}
+
+.animatedborder{
+	animation-name: borderanimation;
+	animation-duration: 1s;
+	animation-timing-function: ease; 
+	animation-iteration-count: infinite;
+}
+
+.dreamer-h{
+	font-family: 'DreamerTM';
+	width: 100%;
+	text-align: center;
+	margin: 10px auto;
+	padding: 1%;
+	font-size: 70px;
+}
+
+.dreamer-b{
+	width: 100%;
+	font-style: italic;
+	max-width: 750px;
+	margin: 10px auto;
+	font-size: 17px;
+}
+/* pink */
+.pinkpara{
+	background-color: rgb(250, 186, 196);
+	padding: 2%;
+	width: 100%;
+	max-width: 750px;
+	margin: 10px auto;
+}
+.pinkpara:hover {
+	border: 5px solid rgb(246, 231, 0);
+}
+.pinkpara:active {
+	background-color: rgb(246, 231, 0);
+}
+
+/* yellow */
+.yellowpara{
+	background-color: rgb(246, 231, 0);
+	padding: 2%;
+	width: 100%;
+	max-width: 750px;
+	margin: 10px auto;
+}
+.yellowpara:hover {
+	border: 5px solid rgb(251, 251, 231);
+}
+.yellowpara:active {
+	background-color: rgb(251, 251, 231);
+}
+/* blue */
+.bluepara{
+	background-color: rgb(47, 38, 125);
+	color: rgb(251, 251, 231);
+	padding: 2%;
+	width: 100%;
+	max-width: 750px;
+	margin: 10px auto;
+
+}
+.bluepara:hover{
+	border: 5px solid rgb(250, 186, 196);
+}
+.bluepara:active{
+	background-color: rgb(250, 186, 196);
+	color: black
+}
+/* white */
+.whitepara{
+	background-color: rgb(251, 251, 221);
+	padding: 2%;
+	width: 100%;
+	max-width: 750px;
+	margin: 10px auto;
+}
+.whitepara:hover {
+	border: 5px solid rgb(47, 38, 125);
+}
+
+.whitepara:active {
+	background-color: rgb(47, 38, 125);
+	color: rgb(251, 251, 231);
+}
+
+.block{
+	background-color: rgb(47, 38, 125);
+	padding: 1%;
+}
+
+.star1{
+	color: rgb(251, 251, 231);
+	font-size: 24px; 
+	position: absolute;
+	top: 0px;
+	left: 500px;
+}
+
+.star2{
+	color: rgb(251, 251, 231);
+	font-size: 20px; 
+	position: absolute;
+	top: 420px;
+	left: 740px;
+}
+/*  
+.star2{
+	color: rgb(47, 38, 125);
+	font-size: 50px; 
+	position: absolute;
+	top: 420px;
+	left: 740px;
+}
+
+.star3{
+	color: rgb(47, 38, 125);
+	font-size: 50px; 
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+
+.star4{
+	color: rgb(250, 186, 196);
+	font-size: 50px; 
+	position: absolute;
+	top: 870px;
+	left: 10px;
+}
+
+.star5{
+	color: rgb(251, 251, 231);
+	font-size: 50px; 
+	position: absolute;
+	top: 1450px;
+	left: 800px;
+}
+
+.star{
+	color: rgb(47, 38, 125);
+	font-size: 50px; 
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+*/
+
+/* link colors */
+a:link {
+	color: rgb(251, 251, 221);
+}
+a:visited {
+	color: rgb(246, 231, 0);
+}
+a:hover {
+	color: rgb(250, 186, 196);
+}
+a:active {
+	color: rgb(246, 231, 0);
+}
+
