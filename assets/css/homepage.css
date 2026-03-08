@@ -1,27 +1,104 @@
 /* Add styles to all elements */
 * {
-	margin: 0; /* remove margin from all elements */
-	padding: 0; /* remove padding from all elements */
-	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+	margin: 0;
+	/* remove margin from all elements */
+	padding: 0;
+	/* remove padding from all elements */
+	box-sizing: border-box;
+	/* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
+
+@font-face {
+	font-family: 'DreamerTM';
+	src: url('../fonts/DreamerTM-Regular.woff') format('woff');
+}
+
 body {
 	font-family: sans-serif;
-	background-color: yellow;
+	background-color: black;
+	background-image: url("../bliss.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
 }
+
+h1 {
+	font-family: monospace;
+	font-size: 70px;
+}
+
+h2 {
+	font-family: monospace;
+	color: white;
+	font-size: 18px;
+	margin: 40px;
+	text-align: center;
+}
+
 header {
 	padding: 20px;
 	margin: 40px;
 	background-color: white;
-	border: 5px solid black;
+	border-radius: 10px;
 }
-nav {
-	padding: 20px;
-	margin: 40px;
-	background-color: white;
-	border: 5px solid black;
-}
+
 ul {
 	margin: 20px;
+}
+
+a {
+	text-decoration: none;
+	font-family: monospace;
+}
+
+.computer-grid {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.version-link {
+	border-radius: 10px;
+	/* background-color: rgba(255, 255, 255, 0.886); */
+	text-decoration: none;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	transition: background-color .2s, scale .2s;
+}
+
+.version-link:hover{
+	background-color: rgba(255, 255, 255, 0.253);
+	scale: 1.01;
+}
+.version-link img {
+	width: 100%;
+}
+
+.version-link h2 {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+	.computer-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.computer-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+a:active {
+	color: purple;
 }

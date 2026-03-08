@@ -20,13 +20,10 @@ body {
 	font-family: serif;
 	background-image: linear-gradient(to top,rgb(250, 186, 196),rgb(240, 231, 101), rgb(251, 251, 221),rgb(240, 231, 101),rgb(250, 186, 196), rgb(251, 251, 221));
 	background-color: rgb(251, 251, 221);
-	cursor: url('../cursor.png'), auto;
-}
-/* AAAA background animation */
-body {
-    margin: 0;
+	cursor: url('../cursor.png');
+/* for animated bg */
+	margin: 0;
     padding: 0;
-    /* Ensure the body and html cover the full screen height */
     height: 100vh; 
 }
 
